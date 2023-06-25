@@ -11,7 +11,7 @@
 using uint = unsigned int;
 #include <immintrin.h>
 #else
-#include "../external/sse2neon.h"
+#include "./external/sse2neon.h"
 #endif
 
 // @description: an implmentation of vec and mat class
