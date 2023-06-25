@@ -108,17 +108,20 @@ public:
   }
 
   vec(T v1, T v2) {
+    static_assert(N == 2);
     data[0] = v1;
     data[1] = v2;
   }
 
   vec(T v1, T v2, T v3) {
+    static_assert(N == 3);
     data[0] = v1;
     data[1] = v2;
     data[2] = v3;
   }
 
   vec(T v1, T v2, T v3, T v4) {
+    static_assert(N == 4);
     data[0] = v1;
     data[1] = v2;
     data[2] = v3;
@@ -907,4 +910,4 @@ std::ostream &operator<<(std::ostream &os, mat<M, N, T> m) {
 using mat2 = mat<2, 2, float>;
 using mat3 = mat<3, 3, float>;
 using mat4 = mat<4, 4, float>;
-};
+}; // namespace gl
